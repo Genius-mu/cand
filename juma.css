@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    background-color: rgb(12, 12, 79);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid yellow;
+    border-right: 384px solid yellow;
+    border-bottom: 384px solid yellow;
+    border-left: 384px solid transparent;
+}
+.dick {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(255, 234, 0);
+}
+.dick::before {
+    content: "";
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    background-color: unset;
+    border: 5px solid red;
+    border-radius: 50%;
+    transform: translate(10px, 10px);
+}
